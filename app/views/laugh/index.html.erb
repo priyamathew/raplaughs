@@ -1,1 +1,9 @@
 <h1>Rap Laughs</h1>
+<% @laughs.each do |laugh| %>
+  <div class="laugh" id="<%= laugh.rapper_name %>">
+  <%= image_tag laugh.static_img %>
+  <audio controls>
+    <source src="audio/<%= laugh.audio_url %>" type="audio/mpeg" />
+  </audio>
+  </div>
+<% end %>
