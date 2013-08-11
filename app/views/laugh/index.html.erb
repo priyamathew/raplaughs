@@ -3,7 +3,7 @@
   <div class="laugh" id="<%= laugh.rapper_name %>">
   <%= image_tag laugh.static_img %>
   <audio controls>
-    <source src="audio/<%= laugh.audio_url %>" type="audio/mpeg" />
+    <source src="audio/<%= laugh.audio_url %>" type="audio/mpeg" autoplay="autoplay"/>
   </audio>
   	<div class="tweet">
   		<span>Tweet <%= laugh.rapper_name %>'s Laugh:</span>
