@@ -5,5 +5,9 @@
   <audio controls>
     <source src="audio/<%= laugh.audio_url %>" type="audio/mpeg" />
   </audio>
+  	<div class="tweet">
+  		<span>Tweet <%= laugh.rapper_name %>'s Laugh:</span>
+  		  	<%= tweet_button(:url => laugh.sc_url ) %>
+  	</div>
   </div>
 <% end %>
