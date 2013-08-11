@@ -24,6 +24,9 @@ gem 'jquery-rails'
 
 # To use postgres for database
 gem 'pg'
+
+#To Tweet out each laugh
+gem "tweet-button"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

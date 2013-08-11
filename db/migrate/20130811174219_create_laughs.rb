@@ -1,5 +1,5 @@
 class CreateLaughs < ActiveRecord::Migration
-  def create
+  def change
   	create_table :laughs do |t|
   		t.string :audio_url
   		t.string :sc_url
