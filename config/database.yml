@@ -16,13 +16,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: raplaughs_development
+  database: raplaughs_test
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: raplaughs_development
+  database: raplaughs_production
   pool: 5
   timeout: 5000
