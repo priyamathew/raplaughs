@@ -1,0 +1,74 @@
+/* Base Element Styling */
+body {
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 1em 6em;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+audio {
+  display: none;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: .5em 0;
+}
+
+/* Laugh */
+
+.laugh {
+  float: left;
+  margin: 1em 0;
+  width: 30%;
+}
+
+body .laugh:nth-child(3n+3) {
+  margin: 1em 5%;
+}
+
+.laugh img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  font-family: Arial, sans-serif;
+  font-size: .6em;
+  padding: 2em 0;
+  text-transform: lowercase;
+}
+
+
+/* Media Queries: 700 px breakpoint */
+
+@media all and (max-width: 700px) {
+  body {
+    padding: .5em 3em;
+  }
+}
+
+/* Media Queries: 500 px breakpoint */
+
+@media all and (max-width: 500px) {
+  body {
+    padding: .5em;
+  }
+
+  .laugh {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  body .laugh:nth-child(3n+3) {
+  margin: 0;
+}
+}
