@@ -22,6 +22,22 @@ h1 {
   margin: .5em 0;
 }
 
+/* About */
+
+.team-photo {
+  float: left;
+  margin: 1em 0;
+  width: 16%;
+}
+
+body .team-photo:nth-child(3n+3) {
+  margin: 1em 5%;
+}
+
+.team-photo img {
+  width: 100%;
+}
+
 /* Laugh */
 
 .laugh {
