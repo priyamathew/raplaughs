@@ -26,6 +26,11 @@ gem 'pg'
 
 #To Tweet out each laugh
 gem "tweet-button"
+
+#Google Analytics
+group :production do
+  gem 'rack-google-analytics', :require => 'rack/google-analytics'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
