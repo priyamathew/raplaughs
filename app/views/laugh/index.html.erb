@@ -2,7 +2,10 @@
 <% @laughs.each do |laugh| %>
   <div class="laugh" id="<%= laugh.rapper_name %>">
   <%= image_tag laugh.static_img %>
-    <audio src="audio/<%= laugh.audio_url %>" preload="auto" controls></audio>
+    <audio controls preload="auto">
+      <source src="audio/<%= laugh.audio_url_mp3 %>" />
+      <source src="audio/<%= laugh.audio_url_ogg %>" />
+    </audio>
   	<div class="tweet">
   		<span>Tweet <%= laugh.rapper_name %>'s Laugh:</span>
   		  	<%= tweet_button(:url => laugh.sc_url ) %>
