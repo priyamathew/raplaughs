@@ -11,17 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130811174219) do
+ActiveRecord::Schema.define(:version => 20130813024447) do
 
   create_table "laughs", :force => true do |t|
-    t.string   "audio_url"
+    t.string   "audio_url_ogg"
     t.string   "sc_url"
     t.string   "static_img"
     t.string   "gif_img"
     t.string   "rapper_name"
     t.string   "song_title"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "audio_url_mp3"
   end
 
 end
